@@ -152,7 +152,7 @@ export default {
         } else {
           this.showToast(this.$t('config-editor.error-msg-cannot-save'), false);
         }
-        InfoHandler('Config has been written to disk succesfully', InfoKeys.RAW_EDITOR);
+        InfoHandler('Config has been written to disk successfully', InfoKeys.RAW_EDITOR);
         this.$store.commit(StoreKeys.SET_CONFIG, this.jsonData);
         this.progress.end();
       })
@@ -180,7 +180,7 @@ export default {
       if (data.appConfig.theme) {
         localStorage.setItem(localStorageKeys.THEME, data.appConfig.theme);
       }
-      InfoHandler('Config has succesfully been saved in browser storage', InfoKeys.RAW_EDITOR);
+      InfoHandler('Config has successfully been saved in browser storage', InfoKeys.RAW_EDITOR);
       this.showToast(this.$t('config-editor.success-msg-local'), true);
     },
     /* Clears config from browser storage, only removing relevant items  */
